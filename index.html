@@ -6,10 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Stump Tank</title>
   <link rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="javascript/main.js"></script>
 </head>
 
 <body>
-  <script type="text/javascript" href="javascript/main.js"></script>
+  <!-- header -->
+  <div id="topDiv">Hang Man</div>
+  <!-- entire wrapper -->
+  <div id="mainContainer">
+    <!-- left div containing stick figure & dunk tank -->
+    <div id="leftDiv">
+      <div id="dunkTank">
+        <img src="stickfigure.jpeg">
+      </div>
+    </div>
+    <!-- right div containing buttons, input, the board -->
+    <div id="rightDiv">
+      <div id="theBoard"> WHAT IS THE WORD?
+      </div>
+      <div id="inputGuess">
+        <input id="guess" type="text" placeholder="type your guess"></input>
+        <input id="submit" type="button"></input>
+      </div>
+      <div class="buttons">
+        <button id="start" type="button">START</button>
+        <button id="refresh" type="button">REFRESH</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
