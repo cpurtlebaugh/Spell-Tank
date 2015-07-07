@@ -3,41 +3,45 @@
 ### MVP
 
 * [x] As a guesser, I would like to be presented with a new, random word.
-* [ ] As a guesser, I'd like for there to be a category so I'm not guessing in the
+* [x] As a guesser, I'd like for there to be a category so I'm not guessing in the
   dark.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* As a guesser, I would like to see a space for each letter contained in the
+* [ ] As a guesser, I would like to see a placeholder for each letter contained in the
   word so I can better visualize the answer.
+-----
+* [ ]
+* [ ] As a guesser, I would like to be able to choose a new letter.
 
-* As a guesser, I would like to be able to choose a new letter.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * As a guesser, I would like to see what letters I have previously guessed.
 
 * As a guesser, I would like to see the letters I have correctly chosen *in the
