@@ -2,8 +2,8 @@
 
 ### MVP
 
-* As a guesser, I would like to be presented with a new, random word.
-* As a guesser, I'd like for there to be a category so I'm not guessing in the
+* [x] As a guesser, I would like to be presented with a new, random word.
+* [ ] As a guesser, I'd like for there to be a category so I'm not guessing in the
   dark.
 
 
