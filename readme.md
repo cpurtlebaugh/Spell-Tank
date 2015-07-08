@@ -9,9 +9,12 @@
   word so I can better visualize the answer.
 
 -----
-* [ ] As a guesser, I would like to be able to choose a new letter.
-* [ ] As a guesser, I would like to see the letters I have correctly chosen
-* [ ] As a guesser, I would like to see the letters I have chosen incorrectly
+* [X] As a guesser, I would like to be able to choose a new letter.
+* [X] As a guesser, I would like to see the letters I have correctly chosen
+* [X] As a guesser, I would like to see the letters I have chosen incorrectly
+
+-----
+* [ ] As a guesser, I'd like to know how many wrong guesses I have made.
 
 
 
@@ -21,29 +24,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* As a guesser, I would like to see what letters I have previously guessed.
-
-* As a guesser, I'd like to know how many wrong guesses I have made.
 
 * As a guesser, I'd like to see a fun visualization of the number of wrong
   guesses I've made / have left so that I can feel the fear of losing!
