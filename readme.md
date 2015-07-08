@@ -5,14 +5,13 @@
 * [x] As a guesser, I would like to be presented with a new, random word.
 * [x] As a guesser, I'd like for there to be a category so I'm not guessing in the
   dark.
-* [ ] As a guesser, I would like to see a placeholder for each letter contained in the
+* [x] As a guesser, I would like to see a placeholder for each letter contained in the
   word so I can better visualize the answer.
+
 -----
-* [ ]
 * [ ] As a guesser, I would like to be able to choose a new letter.
-
-
-
+* [ ] As a guesser, I would like to see the letters I have correctly chosen
+* [ ] As a guesser, I would like to see the letters I have chosen incorrectly
 
 
 
@@ -44,9 +43,6 @@
 
 * As a guesser, I would like to see what letters I have previously guessed.
 
-* As a guesser, I would like to see the letters I have correctly chosen *in the
-  word I am guessing.*
-
 * As a guesser, I'd like to know how many wrong guesses I have made.
 
 * As a guesser, I'd like to see a fun visualization of the number of wrong
@@ -63,11 +59,6 @@
 * As a guesser, I would like there to be a visual depiction of my victory.
 * As an administrator, I'd like there to be a time-limit so the players don't
   loose interest.
-
-#### Administrator
-
-* As an administrator, I'd like to make sure that the word length matches the
-  game level previously selected.
 
 #### Chooser
 

@@ -2,14 +2,6 @@ console.log("js_loaded");
 
 /* MODEL */
 
-// var wordSet = [
-//   "kaleidescope",
-//   "soundscape",
-//   "acquisition",
-//   "mississippi",
-//   "bookkeeper"
-// ];
-
 // an array of words within categorical arrays
 
 var wordSet = [
@@ -29,44 +21,33 @@ var wordSet = [
 
 var topics = ["places", "people", "animals", "random"];
 
-// choose a word randomly from "wordSet" array, returns a word
-// var chooseAWord = function() {
-//   var word = wordSet[Math.floor(Math.random() * wordSet.length)];
-//   return word;
-// };
+// Assign index as random selection of the wordSet's array index
+// Creates a category var. & assigns it to the new wordSet[index] var.
+// Assigns the index var. as the index of topics var. & puts it into html
+// Creates a word var. that is randomized based on the category array
 
-// Chooses a category array randomly from wordSet. It then returns a
-// random word from the chosen category array.
+
 var chooseAWord = function() {
   var index = Math.floor(Math.random() * wordSet.length);
   var category = wordSet[index];
   $("#topic").text(topics[index]);
-  var word = category[Math.floor(Math.random() * category.length)];
-  return word;
+  word = category[Math.floor(Math.random() * category.length)];
+  var hiddenWord = word.replace(/\w/g, "_ ");
+  return hiddenWord;
 };
-
-// display the category a word comes from
-// var displaysCategory = function() {
-//   if (chooseAWord.category === wordSet[0]) {
-//     $("#displayTopic") = "TOPIC: Places";
-//   } else if (chooseAWord.category === wordSet[1]) {
-//     $("#displayTopic") = "TOPIC: People";
-//   } else if (chooseAWord.category === wordSet[2]) {
-//     $("#displayTopic") = "TOPIC: Animals";
-//   } else if (chooseAWord.category === wordSet[3]) {
-//     $("#displayTopic") = "TOPIC: Random";
-//   }
-// };
 
 
 /* VIEW FUNCTIONS */
 
 // puts a word into the html div theBoard, input is a word,
 // output none but side-effect of updating html
-var displaysWord = function(word) {
-  $("#theBoard").text(word);
+var displayWord = function(x) {
+  $("#theBoard").text(x);
 };
 
 $("#start").on('click', function() {
-  displaysWord(chooseAWord());
+  displayWord(chooseAWord());
 });
+
+// takes user input
+$("#submit").on('click', function() {}
