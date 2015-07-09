@@ -19,18 +19,29 @@ body {
 
 .leftDiv {
   float: left;
+  height: 500px;
+  width: 280px;
+  background-image: url("images/stickfigure.jpeg");
   height: 419px;
   width: 254px;
-  background-image: url("images/stickfigure.jpeg");
-  background-size: cover;
-  border: dotted black 1px;
-}
-/*#dunkTank {
-  background-image: url("images/stickfigure.jpeg");
-  max-height: 100%;
-  max-width: 50%;
   background-repeat: no-repeat;
-}*/
+  background-size: cover;
+  border: solid black 4px;
+  margin: 10px;
+}
+
+#w1,
+#w2,
+#w3,
+#w4,
+#w5,
+#w6 {
+  background-color: blue;
+  opacity: .80;
+  height: 70px;
+  width: 254px;
+  visibility: hidden;
+}
 
 .rightDiv {
   float: right;

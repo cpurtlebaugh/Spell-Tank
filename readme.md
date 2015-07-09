@@ -15,21 +15,14 @@
 
 -----
 * [ ] As a guesser, I'd like to know how many wrong guesses I have made.
-
-
-
-
-
-
-
-
-
-
 * As a guesser, I'd like to see a fun visualization of the number of wrong
   guesses I've made / have left so that I can feel the fear of losing!
-
 * As a guesser, I'd like to know when I win the game and have a choice to play
   again.
+
+
+
+
 
 ### ICEBOX
 

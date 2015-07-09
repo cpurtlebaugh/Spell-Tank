@@ -1,9 +1,7 @@
 console.log("js_loaded");
 
 /* MODEL */
-
 // an array of words within categorical arrays
-
 var wordSet = [
   ["singapore", "azerbaijan", "grand canyon", "sahara desert",
     "south korea", "niagra falls"
@@ -30,7 +28,6 @@ var guessCount = 6;
 // Assigns the index var. as the index of topics var. & puts it into html
 // Creates a word var. that is randomized based on the category array
 
-
 var chooseAWord = function() {
   var index = Math.floor(Math.random() * wordSet.length);
   var category = wordSet[index];
@@ -38,11 +35,6 @@ var chooseAWord = function() {
   word = category[Math.floor(Math.random() * category.length)];
   hiddenWord = word.replace(/\w/g, "_");
 };
-
-
-// stores the guesser's letter, input is a letter from html input,
-// output is adding the letter to an array
-
 
 /* VIEW FUNCTIONS */
 
@@ -56,14 +48,24 @@ var displayAnswer = function() {
   $("#theBoard").text(word);
 };
 
+// clears the board
+
+$("#clear").on('click', function() {
+  clearBoard();
+});
+
 var clearBoard = function() {
   location.reload();
 };
 
+
+// starts the game and selects a random topic / word
 $("#start").on('click', function() {
   chooseAWord();
   displayWord();
 });
+
+// the in play function
 
 $("#buttons").on('click', function(event) {
   if ($(event.target).hasClass("found") || $(event.target).hasClass("wrong")) {
@@ -87,7 +89,19 @@ $("#buttons").on('click', function(event) {
   } else {
     $(event.target).addClass("wrong");
     guessCount--;
-    console.log(guessCount);
+    if (guessCount === 5) {
+      $("#w6").css("visibility", "visible");
+    } else if (guessCount === 4) {
+      $("#w5").css("visibility", "visible");
+    } else if (guessCount === 3) {
+      $("#w4").css("visibility", "visible");
+    } else if (guessCount === 2) {
+      $("#w3").css("visibility", "visible");
+    } else if (guessCount === 1) {
+      $("#w2").css("visibility", "visible");
+    } else if (guessCount === 0) {
+      $("#w1").css("visibility", "visible");
+    }
   };
   console.log(hiddenWord);
   displayWord();
@@ -96,10 +110,4 @@ $("#buttons").on('click', function(event) {
     displayAnswer();
     $(this).off(event);
   }
-});
-
-// clears the board
-
-$("#clear").on('click', function() {
-  clearBoard();
 });
