@@ -23,6 +23,8 @@ var topics = ["places", "people", "animals", "random"];
 
 var word, hiddenWord;
 
+var guessCount = 6;
+
 // Assign index as random selection of the wordSet's array index
 // Creates a category var. & assigns it to the new wordSet[index] var.
 // Assigns the index var. as the index of topics var. & puts it into html
@@ -58,13 +60,12 @@ $("#start").on('click', function() {
 });
 
 $("#buttons").on('click', function(event) {
-  if ($(event.target).hasClass("found") ||
-    $(event.target).hasClass("wrong")) {
+  if ($(event.target).hasClass("found") || $(event.target).hasClass("wrong")) {
     return;
   }
   var found = false;
   var guess = event.target.innerHTML.toLowerCase();
-  console.log(guess);
+  // console.log(guess);
   for (var i = 0; i < word.length; i++) {
     if (word[i] === guess) {
       var a = hiddenWord.split('');
@@ -73,13 +74,19 @@ $("#buttons").on('click', function(event) {
       hiddenWord = a.join('');
       console.log(hiddenWord);
       found = true;
-    }
+    };
   }
+
   if (found) {
     $(event.target).addClass("found");
   } else {
     $(event.target).addClass("wrong");
-  }
+    guessCount--;
+    console.log(guessCount);
+  };
   console.log(hiddenWord);
   displayWord();
+  if (guessCount === 0) {
+    alert("you loose!");
+  }
 });
