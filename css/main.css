@@ -2,25 +2,40 @@ html,
 body {
   color: black;
   font-family: monospace;
-  font-size: 50px;
+  font-size: 35px;
 }
 
-#topDiv {
+.topDiv {
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-#leftDiv {
-  float: left;
-  margin: 25px;
-  background-color: black;
+.mainContainer {
+  height: 100%;
+  width: 100;
 }
 
-#rightDiv {
+.leftDiv {
+  float: left;
+  height: 419px;
+  width: 254px;
+  background-image: url("images/stickfigure.jpeg");
+  background-size: cover;
+  border: dotted black 1px;
+}
+/*#dunkTank {
+  background-image: url("images/stickfigure.jpeg");
+  max-height: 100%;
+  max-width: 50%;
+  background-repeat: no-repeat;
+}*/
+
+.rightDiv {
   float: right;
-  margin: 25px;
+  margin: 10px;
+  max-width: 50%;
   position: relative;
 }
 

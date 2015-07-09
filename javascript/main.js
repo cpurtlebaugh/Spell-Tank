@@ -40,8 +40,6 @@ var chooseAWord = function() {
 };
 
 
-
-
 // stores the guesser's letter, input is a letter from html input,
 // output is adding the letter to an array
 
@@ -52,6 +50,14 @@ var chooseAWord = function() {
 // output none but side-effect of updating html
 var displayWord = function() {
   $("#theBoard").text(hiddenWord);
+};
+
+var displayAnswer = function() {
+  $("#theBoard").text(word);
+};
+
+var clearBoard = function() {
+  location.reload();
 };
 
 $("#start").on('click', function() {
@@ -76,7 +82,6 @@ $("#buttons").on('click', function(event) {
       found = true;
     };
   }
-
   if (found) {
     $(event.target).addClass("found");
   } else {
@@ -87,6 +92,14 @@ $("#buttons").on('click', function(event) {
   console.log(hiddenWord);
   displayWord();
   if (guessCount === 0) {
-    alert("you loose!");
+    alert("you've lost the game!");
+    displayAnswer();
+    $(this).off(event);
   }
+});
+
+// clears the board
+
+$("#clear").on('click', function() {
+  clearBoard();
 });
