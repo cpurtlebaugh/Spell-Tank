@@ -67,6 +67,7 @@ button {
   margin: 5px;
   border: dotted white 1px;
   height: 40px;
+  cursor: pointer;
 }
 
 div span {
@@ -85,6 +86,7 @@ div span {
 
 .letter {
   font-weight: bold;
+  cursor: pointer;
 }
 
 .found {
