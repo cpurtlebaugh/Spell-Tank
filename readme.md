@@ -16,16 +16,16 @@ array of topics and words.
   some of the game logic. For example, a correct or incorrect guess on a letter
   triggered the letter's style to change.
 
-* <strong>Javascript</strong>: was used to store variables including the 2D
+* <strong>Javascript:</strong>: was used to store variables including the 2D
   array of topics/word and the page reload. Some of the main function started out
   heavily with vanilla javascript in regards to counting and converting the guesses
   to display onto the board.
 
-* <strong>JQuery</strong> was used heavily. It was used to manipualte the DOM
+* <strong>JQuery:</strong> was used heavily. It was used to manipualte the DOM
   because the vast majority of the logic was tied to it. The version of jQuery used
   was v. 2.1.4 via a CDN.
 
-* <strong>RegEx</strong> was used once to convert the randomnized word into a
+* <strong>RegEx:</strong> was used once to convert the randomnized word into a
   hiddneWord that would display as dashes in the browser.
 
 ## DESIGN APPROACH
