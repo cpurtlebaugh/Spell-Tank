@@ -3,13 +3,28 @@ body {
   color: black;
   font-family: monospace;
   font-size: 35px;
+  height: 100%;
+  width: 100%;
 }
 
-.topDiv {
+header {
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  font-size: 18px;
+  height: 3em;
+  bottom: 0;
+  clear: both;
+  margin-top: 25px;
+  padding: 20px;
+  text-align: center;
+  max-width: 90%;
 }
 
 .mainContainer {
@@ -28,6 +43,7 @@ body {
   background-size: cover;
   border: solid black 4px;
   margin: 10px;
+  margin-left: 100px;
 }
 
 #w1,
@@ -44,11 +60,14 @@ body {
 }
 
 .rightDiv {
-  float: right;
+  /*  float: right;*/
+  
   margin: 10px;
-  max-width: 50%;
+  max-width: 75%;
   position: relative;
+  margin-left: 450px;
 }
+/*displays the topic & board*/
 
 #theBoard,
 #topic {

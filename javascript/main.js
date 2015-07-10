@@ -23,6 +23,9 @@ var word, hiddenWord;
 
 var guessCount = 6;
 
+var audio1 = $("#applause");
+var audio2 = $("#sadNoise");
+
 // Assign index as random selection of the wordSet's array index
 // Creates a category var. & assigns it to the new wordSet[index] var.
 // Assigns the index var. as the index of topics var. & puts it into html
@@ -78,7 +81,7 @@ $("#buttons").on('click', function(event) {
     if (word[i] === guess) {
       var a = hiddenWord.split('');
       console.log(a);
-      a[i] = guess.toUpperCase();
+      a[i] = guess.toLowerCase();
       hiddenWord = a.join('');
       console.log(hiddenWord);
       found = true;
@@ -106,8 +109,13 @@ $("#buttons").on('click', function(event) {
   console.log(hiddenWord);
   displayWord();
   if (guessCount === 0) {
+    $(audio2).trigger("play");
     alert("you've lost the game!");
     displayAnswer();
     $(this).off(event);
+  }
+  if (hiddenWord === word) {
+    $(audio1).trigger("play");
+    alert("you've won!");
   }
 });
